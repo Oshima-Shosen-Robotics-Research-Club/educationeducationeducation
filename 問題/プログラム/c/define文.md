@@ -113,13 +113,12 @@ SQUARE(5 + 1)
   - `MAX(a, b)` の内容を三項演算子からif文に変更してください
   - 複数行でマクロ関数を定義することになります
   - マクロが複数行になる時は、以下の様に行の終わりにバックスラッシュ(\)をつけて改行します
-
-```cpp
-#define TOTAL_NUM	\
-(HEADER_NUM_1 + HEADER_NUM_2 + HEADER_NUM_3 +	\
-BODY_NUM_1 + BODY_NUM_2 + BODY_NUM_3 + 		\
-FOOTER_NUM_1 + FOOTER_NUM_2 + FOOTER_NUM_3)
-```
+    ```cpp
+    #define TOTAL_NUM	\
+    (HEADER_NUM_1 + HEADER_NUM_2 + HEADER_NUM_3 +	\
+    BODY_NUM_1 + BODY_NUM_2 + BODY_NUM_3 + 		\
+    FOOTER_NUM_1 + FOOTER_NUM_2 + FOOTER_NUM_3)
+    ```
 
 ---
 
@@ -139,13 +138,13 @@ FOOTER_NUM_1 + FOOTER_NUM_2 + FOOTER_NUM_3)
   - `DEBUG` が定義されている場合はデバッグ用のメッセージを出力します。
   - 定義されていない場合は通常のメッセージを出力します。
 
-例:  
-```cpp
-#ifdef DEBUG
-  printf("デバッグモード\n");
-#else
-  printf("通常モード\n");
-#endif
-```
+  例:  
+  ```cpp
+  #ifdef DEBUG
+    printf("デバッグモード\n");
+  #else
+    printf("通常モード\n");
+  #endif
+  ```
 
 ---
